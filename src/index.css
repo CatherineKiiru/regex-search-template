@@ -24,7 +24,7 @@ html {
 body {
   background-color: #000;
   font-family: 'Nunito', sans-serif;
-  color: white;
+
 }
 
 p {
@@ -54,7 +54,7 @@ header {
 }
 
 .search {
-  width: 95%;
+  width: 100%;
   border: 2px solid #000;
   border-radius: 2em;
   overflow: hidden;
@@ -67,19 +67,19 @@ header {
   box-shadow: 2px 2px 5px #000;
 }
 
-.search__button,
-.search__input {
+.search_button,
+.search_input {
   background-color: #fff;
   border: none;
   outline: none;
 }
 
-.search__input {
+.search_input {
   padding: 1em;
   width: 85%;
 }
 
-.search__button {
+.search_button {
   width: 15%;
   font-size: 1.5rem;
   padding-right: 0.5em;
@@ -93,7 +93,7 @@ header {
     font-size: 1.5rem;
   }
 
-  .search__button {
+  .search_button {
     font-size: 2rem;
   }
 }

@@ -1,5 +1,7 @@
-import { getPosts } from "./api/Axios";
+import { getPosts } from "./api/axios";
 import { useState, useEffect } from "react";
+import SearchBar from "./SearchBar";
+import ListPage from "./ListPage";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -15,9 +17,13 @@ const App = () => {
         setSearchResults(json);
       });
   }, []);
-  const content = "";
 
-  return content;
+  return (
+    <div>
+      <SearchBar posts={posts} setSearchResults={setSearchResults} />
+      <ListPage searchResults={searchResults}/>
+    </div>
+  );
 };
 
 export default App;
